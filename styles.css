@@ -1,0 +1,235 @@
+/* ==== General Reset ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #f9fafb;
+  color: #222;
+}
+
+/* ==== Container ==== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ==== Header ==== */
+.site-header {
+  background: #006d77;
+  color: #fff;
+  padding: 15px 0;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* responsive */
+}
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.avatar {
+  width: 120px;   /* pehle chhota tha, ab bada */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.tagline {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ==== Nav Bar ==== */
+.nav {
+  display: flex;
+  gap: 25px; /* ek line me links ke darmiyan space */
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav a:hover,
+.nav a.active {
+  color: #ffdd57;
+}
+
+/* ==== Hero Section ==== */
+.hero {
+  text-align: center;
+  padding: 60px 0;
+}
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.hero-subtitle {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+}
+.btn.primary {
+  display: inline-block;
+  background: #006d77;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn.primary:hover {
+  background: #004f54;
+}
+
+/* ==== Sections ==== */
+.section {
+  margin: 40px 0;
+}
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+.grid.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* ==== Chips ==== */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  background: #e0f7f9;
+  color: #006d77;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ==== Contact ==== */
+.contact li {
+  margin-bottom: 8px;
+}
+.contact a {
+  color: #006d77;
+  text-decoration: none;
+}
+
+/* ==== Footer ==== */
+.site-footer {
+  background: #006d77;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+footer {
+  background-color: #2c3e50;  /* Same as navbar */
+  color: white;               /* Text white */
+  text-align: center;         /* Center align text */
+  padding: 20px;              /* Spacing inside footer */
+  margin-top: 20px;           /* Gap above footer */
+}
+footer a {
+  color: #f1c40f;  /* Golden yellow links */
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+#research img {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+#research img:hover {
+  transform: scale(1.05);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  background: #003366;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0055aa;
+}
+/* ===== Contact Section ===== */
+#contact ul.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact ul.contact li {
+  margin: 12px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#contact ul.contact li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Icon colors */
+#contact .fa-envelope { color: #d93025; }   /* Red for email */
+#contact .fa-phone { color: #34a853; }      /* Green for phone */
+#contact .fa-location-dot { color: #fbbc05; } /* Yellow for location */
+#contact .fa-github { color: #333; }        /* Dark grey for GitHub */
+#contact .fa-linkedin { color: #0077b5; }   /* Blue for LinkedIn */
+
+/* Links */
+#contact ul.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact ul.contact a:hover {
+  color: #0077b5;
+  text-decoration: underline;
+}
+

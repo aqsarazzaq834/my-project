@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Aqsa Razzaq</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1B4pEcfhT6MqxsVXniPjJJ05rq6Xx4sjqB9KT1Gp6aJQ5gkD1R5V0cw3hl5RZ4x0jQ==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="identity">
+        <img src="aqsa.jpg" alt="Aqsa Razzaq photo" class="avatar" />
+        <div>
+          <h1 class="name">Aqsa Razzaq</h1>
+          <p class="tagline">BS Mathematics Graduate · Researcher in Applied Mathematics &amp; Climate Modeling</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Contact Section ===== -->
+  <main class="section container">
+    <h2>Get in Touch</h2>
+    <p>
+      Feel free to reach out to me through the contact information below or simply
+      fill out the form for a quick message (demo only).
+    </p>
+
+    <div class="grid two">
+      <!-- Contact Info -->
+      <div class="card">
+        <h3>Contact Information</h3>
+        <ul class="contact">
+          <li><strong>Email:</strong> <a href="mailto:aqsarazzaq834@gmail.com">aqsarazzaq834@gmail.com</a></li>
+          <li><strong>Phone:</strong> +92 309 4474758</li>
+          <li><strong>Location:</strong> Pakistan</li>
+          <li><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/aqsa-cheema-33818532a">linkedin.com/in/aqsa-razaq</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/aqsa-razaq">github.com/aqsa-razaq</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Form (Frontend only) -->
+      <div class="card">
+        <h3>Send a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('This is a demo form. No backend connected.');">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn primary">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map Embed -->
+    <section class="card" style="margin-top:20px;">
+      <h3>My Location</h3>
+      <div style="border:2px solid #ccc; border-radius:10px; overflow:hidden;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.2204589059396!2d73.03415821509391!3d31.53079198136842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392241238a0b0e67%3A0x2d04a204d0f6dd4!2sChak%20Jhumra%2C%20Faisalabad!5e0!3m2!1sen!2s!4v1700000000000"
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© <span id="year"></span> Aqsa Razzaq | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
